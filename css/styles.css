@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
 /*
@@ -15,7 +17,8 @@
 /*
 * ==== STYLING ====
 */
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
@@ -94,7 +97,10 @@ i {
   position: relative;
   top: 2px !important; }
 
-.header:before, .header:after, .header:before, .header:after {
+.header:before,
+.header:after,
+.header:before,
+.header:after {
   position: absolute;
   content: "";
   bottom: 10px;
@@ -169,7 +175,8 @@ i {
   padding: 0px 0px;
   margin: 0; }
 
-.rank, .site {
+.rank,
+.site {
   float: left;
   padding: 0px 0 0 32px !important;
   margin: 10px 0 0 0 !important;
@@ -256,10 +263,14 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
 
 .grid {
   column-count: 3;
-  column-gap: 20px; }
+  column-gap: 20px;
+  width: 100%;
+  display: inline-flex;
+  padding: 15px 0 0 0; }
 
 .card {
-  margin: 20px 0 0;
+  margin: 0px 0px 0;
+  width: 100%;
   font-family: "Exo 2";
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -272,6 +283,14 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
   transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; }
+  .card#daily-visits {
+    margin: 0 15px; }
+  .card#services_cost {
+    margin: 0 15px; }
+  .card#volunteers_stay {
+    margin: 15px 0 0; }
+  .card#team_distribution {
+    margin: 15px 0 0; }
   .card h3 {
     color: white;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
@@ -333,7 +352,8 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
     transform: rotateY(0);
     border-radius: 20px !important;
     position: relative; }
-  .card .front:hover, .card .back:hover {
+  .card .front:hover,
+  .card .back:hover {
     cursor: pointer; }
   .card.open .back {
     transform: rotateY(0); }
@@ -496,7 +516,8 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
 .services #score {
   margin: 15px auto 0 !important; }
 
-#daily-visits #score, #cumulative-visits #score {
+#daily-visits #score,
+#cumulative-visits #score {
   font-size: 6.5vw !important; }
 
 .finances h2 {
@@ -525,6 +546,7 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
 .team .col-left {
   width: 31.33% !important;
   margin-right: 2%;
+  margin-top: 20px;
   float: left; }
   .team .col-left .card-body {
     height: 225px; }
