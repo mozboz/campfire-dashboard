@@ -21,19 +21,12 @@
 
 			<ul class="nav">
 				<li class="nav-title profile">Hestia Hellas</li>
-				<li class="nav-item dashboard"><i class="nav-icon icon-speedometer" title="Dashboard"></i><a href="#">Dashboard</a></li>
-				<li class="nav-item new"><i class="nav-icon icon-plus" title="New Entry"></i><a href="#">New Entry</a></li>
-				<li class="nav-item history"><i class="nav-icon icon-pencil" title="History"></i><a href="#">Edit History</a></li>
-				<li class="nav-title browse">Browse</li>
-				<li class="nav-item organisation"><i class="nav-icon icon-organization" title="Browse Organizations"></i><a href="#">By
-						Organization</a></li>
-				<li class="nav-item location"><i class="nav-icon icon-compass" title="Browse Locations"></i><a href="#">By Location</a></li>
-				<li class="nav-item data-points"><i class="nav-icon icon-pie-chart" title="Browse Data Points"></i><a href="#">By
-						Data Points</a></li>
-				<li class="nav-item favourites"><i class="nav-icon icon-star" title="Browse Favorites"></i><a href="#">Favorites</a></li>
-				<li class="nav-title account">Your Account</li>
-				<li class="nav-item notifications"><i class="nav-icon icon-bell" title="Notifications"></i><a href="#">Notifications</a></li>
-				<li class="nav-item settings"><i class="nav-icon icon-settings" title="Settings"></i><a href="#">Settings</a></li>
+				<li class="nav-item dashboard"><i class="nav-icon" id="overview" title="Overview"></i><a href="#organisation">Overview</a></li>
+				<li class="nav-item new"><i class="nav-icon" id="services" title="Services"></i><a href="#servicess">Services</a></li>
+				<li class="nav-item history"><i class="nav-icon" id="finances" title="Finances"></i><a href="#financess">Finances</a></li>
+				<li class="nav-item organisation"><i class="nav-icon" id="team" title="Team"></i><a href="#teamm">Team</a></li>
+				<li class="nav-item location"><i class="nav-icon" id="contact" title="Contact"></i><a href="#contactt">Contact</a></li>
+
 			</ul>
 		</div><!-- /Aside -->
 
@@ -44,11 +37,7 @@
 					<li class="active">Hestia Hellas</li>
 				</ul>
 
-				<ul class="options">
-					<li><i class="nav-icon icon-settings"></i>Settings</li>
-					<li><i class="nav-icon icon-graph"></i>Dashboard</li>
-					<li class="user"><i class="nav-icon icon-user" style="color:#fff"></i></li>
-				</ul>
+
 			</div>
 
 			<div id="organisation">
@@ -230,7 +219,7 @@
 				</div>
 			</div>
 
-			<div class="section services" data-aos="fade-up">
+			<div class="section services" id="servicess" data-aos="fade-up">
 				<h2>Services</h2>
 
 				<div class="grid">
@@ -284,7 +273,7 @@
 				</div>
 			</div>
 
-			<div class="section finances" data-aos="fade-up">
+			<div class="section finances" data-aos="fade-up" id="financess">
 				<h2>Finances</h2>
 
 				<div class="grid">
@@ -338,7 +327,7 @@
 				</div>
 			</div>
 
-			<div class="section team" data-aos="fade-up">
+			<div class="section team" data-aos="fade-up" id="teamm">
 				<h2>Team</h2>
 
 				<div class="col-left">
@@ -402,7 +391,7 @@
 				</div>
 			</div>
 
-			<div class="section contact" data-aos="fade-up">
+			<div class="section contact" data-aos="fade-up" id="contactt">
 				<h2>Contact Information</h2>
 
 				<div class="contact-card">
