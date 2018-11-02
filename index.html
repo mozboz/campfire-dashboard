@@ -21,11 +21,17 @@
 
 			<ul class="nav">
 				<li class="nav-title profile">Hestia Hellas</li>
-				<li class="nav-item dashboard"><i class="nav-icon" id="overview" title="Overview"></i><a href="#organisation">Overview</a></li>
-				<li class="nav-item new"><i class="nav-icon" id="services" title="Services"></i><a href="#servicess">Services</a></li>
-				<li class="nav-item history"><i class="nav-icon" id="finances" title="Finances"></i><a href="#financess">Finances</a></li>
-				<li class="nav-item organisation"><i class="nav-icon" id="team" title="Team"></i><a href="#teamm">Team</a></li>
-				<li class="nav-item location"><i class="nav-icon" id="contact" title="Contact"></i><a href="#contactt">Contact</a></li>
+
+				<li class="nav-item"><a data-scroll href="#organisation"><i class="nav-icon" id="overview" title="Overview"></i><span
+						 class='link-title'>Overview</span></a></li>
+
+				<li class="nav-item"><a data-scroll href="#servicess"><i class="nav-icon" id="services" title="Services"></i><span
+						 class='link-title'>Services</span></a></li>
+				<li class="nav-item"><a data-scroll href="#financess"><i class="nav-icon" id="finances" title="Finances"></i><span
+						 class='link-title'>Finances</span></a></li>
+				<li class="nav-item"><a data-scroll href="#teamm"><i class="nav-icon" id="team" title="Team"></i><span class='link-title'>Team</span></a></li>
+				<li class="nav-item"><a data-scroll href="#contactt"><i class="nav-icon" id="contact" title="Contact"></i><span
+						 class='link-title'>Contact</span></a></li>
 
 			</ul>
 		</div><!-- /Aside -->
@@ -57,7 +63,7 @@
 			</div>
 
 			<div class="section overview">
-				<h2>Hestia Hellas</h2>
+				<h2>Overview</h2>
 
 				<div class="grid">
 					<div class="card" id="smart-aid">
@@ -428,6 +434,8 @@
 	</div>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
@@ -435,6 +443,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+
 		AOS.init({
 			animatedClassName: 'aos-animate',
 			// class applied on animation	  
@@ -456,7 +466,7 @@
 						opacity: "0"
 					},
 					0);
-				$('.sidebar ul.nav li a').velocity({
+				$('.sidebar ul.nav li a .link-title').velocity({
 						display: "none"
 					},
 					0);
@@ -472,7 +482,7 @@
 				}, {
 					delay: '200'
 				});
-				$('.sidebar ul.nav li a').velocity({
+				$('.sidebar ul.nav li a .link-title').velocity({
 					opacity: "1",
 					display: 'inline'
 				}, {
